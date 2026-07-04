@@ -97,15 +97,30 @@ AI Generation: Vulnerabilities are batched and sent to the LLM to generate targe
 
 Review: Developers and Compliance Officers can review the dashboard to approve AI-generated patches.
 
+🧪 Customization & Example Files
+
+To help you test the pipeline immediately, this repository includes intentional sample files. You should modify these to fit your organization's needs:
+
+compliance_policies.json: This is the "brain" of the Ethics Auditor. Replace the contents of this file with your own company's rules, compliance standards, and data privacy policies.
+
+bad_code.py: This file was intentionally created with severe security vulnerabilities (like hardcoded passwords and eval()) to demonstrate the AST Security Scanner and AI Remediation engine.
+
+project_proposal.txt: This is a sample text document used to test the Ethics/Policy scanner. To test it yourself, write a few sentences in this file that explicitly violate the rules you set in your compliance_policies.json file (e.g., "We plan to store all user emails and passwords in a plaintext database" to trigger a Data Minimization violation).
+
 📸 Screenshots
 
-<img width="940" height="408" alt="image" src="https://github.com/user-attachments/assets/9a0e6963-91a1-464a-b79f-91e102427324" />
 
-<img width="940" height="432" alt="image" src="https://github.com/user-attachments/assets/b737effb-f415-4d4f-bfb1-7fcfca9756d4" />
 
-<img width="940" height="434" alt="image" src="https://github.com/user-attachments/assets/a6f32471-224f-4d06-90b3-a38edca4dae4" />
+<img width="1898" height="957" alt="image" src="https://github.com/user-attachments/assets/a1b5b71d-1f84-4d65-896b-236bc55c7df2" />
 
-<img width="940" height="376" alt="image" src="https://github.com/user-attachments/assets/550e3012-aa97-4fff-aba8-2c81c4d88b33" />
+<img width="1888" height="952" alt="image" src="https://github.com/user-attachments/assets/b0d98520-cdf0-43d9-aaf4-d0baf76a534a" />
+
+<img width="1893" height="965" alt="image" src="https://github.com/user-attachments/assets/453022e5-19d0-49f4-bd11-f5d0ba3d0780" />
+
+<img width="1893" height="950" alt="image" src="https://github.com/user-attachments/assets/43229cb3-45bb-4f61-a81a-0fcf0a0aa89a" />
+
+<img width="1895" height="947" alt="image" src="https://github.com/user-attachments/assets/7df8a98d-2134-44c7-9bbe-01942a6c39fd" />
+
 
 
 
