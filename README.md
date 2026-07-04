@@ -103,7 +103,7 @@ To help you test the pipeline immediately, this repository includes intentional 
 
 🧪 Built-In Vulnerability Test Suite
 
-To demonstrate the power and versatility of the NexusGuard AST Scanner and AI Remediation engine, this repository includes a suite of intentionally vulnerable files designed to trigger the system's defenses.
+To demonstrate the power and versatility of the NexusGuard AST Scanner and AI Remediation engine, this repository includes a suite of intentionally vulnerable files designed to trigger the system's defenses.[Test with your own files]
 
 1. Independent Security Flaws
 
