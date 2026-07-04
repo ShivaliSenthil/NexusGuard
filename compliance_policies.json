@@ -1,0 +1,14 @@
+{
+  "policies": [
+    {
+      "id": "POL-01",
+      "category": "Data Minimization",
+      "rule": "Do not store raw personally identifiable information (PII) like emails, phone numbers, or passwords in plaintext databases. All customer data must be encrypted or hashed."
+    },
+    {
+      "id": "POL-02",
+      "category": "AI Transparency",
+      "rule": "Machine learning algorithms making automated credit, hiring, or medical decisions must log their features and outputs to allow for bias and fairness auditing."
+    }
+  ]
+}

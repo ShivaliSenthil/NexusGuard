@@ -1,0 +1,1 @@
+In the new update, we are going to store our users' plaintext email addresses in the backup database to make marketing easier.
