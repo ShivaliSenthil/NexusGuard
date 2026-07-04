@@ -99,15 +99,44 @@ Review: Developers and Compliance Officers can review the dashboard to approve A
 
 🧪 Customization & Example Files
 
-To help you test the pipeline immediately, this repository includes intentional sample files. You should modify these to fit your organization's needs:
+To help you test the pipeline immediately, this repository includes intentional sample files. You should modify these to fit your organization's needs.
 
-compliance_policies.json: This is the "brain" of the Ethics Auditor. Replace the contents of this file with your own company's rules, compliance standards, and data privacy policies.
+🧪 Built-In Vulnerability Test Suite
 
-bad_code.py: This file was intentionally created with severe security vulnerabilities (like hardcoded passwords and eval()) to demonstrate the AST Security Scanner and AI Remediation engine.
+To demonstrate the power and versatility of the NexusGuard AST Scanner and AI Remediation engine, this repository includes a suite of intentionally vulnerable files designed to trigger the system's defenses.
 
-project_proposal.txt: This is a sample text document used to test the Ethics/Policy scanner. To test it yourself, write a few sentences in this file that explicitly violate the rules you set in your compliance_policies.json file (e.g., "We plan to store all user emails and passwords in a plaintext database" to trigger a Data Minimization violation).
+1. Independent Security Flaws
+
+These files test the pipeline's ability to detect isolated, high-risk security anti-patterns:
+
+data_processor.py: Contains an eval() vulnerability simulating arbitrary code execution via a mathematical input parser. (Demonstrates context-aware AI patching by recommending the secure numexpr library).
+
+api_client.py: Contains heavily exposed, hardcoded secrets (Stripe API keys, GitHub tokens).
+
+legacy_runner.py: Features the highly dangerous exec() function for dynamic script execution alongside hardcoded database and JWT secrets.
+
+bad_code.py: A general testing script combining basic eval() inputs and plaintext passwords.
+
+2. Interconnected OOP Architectures
+
+These files demonstrate NexusGuard's ability to seamlessly scan complex, Object-Oriented code structures:
+
+db_connector.py & user_manager.py: A multi-file OOP structure where user_manager.py imports a DatabaseConnection class. The AST scanner successfully detects hardcoded secrets hidden inside the __init__ constructor and eval() payloads embedded deep within class methods.
+
+3. Policy & Compliance Documents
+
+compliance_policies.json: The core ruleset for the Ethics Auditor. Easily customizable for your organization's specific data privacy and AI fairness requirements.
+
+project_proposal.txt: A sample business document designed to violate the Data Minimization policy, proving the pipeline's ability to audit plain English text against JSON compliance rules.
 
 📸 Screenshots
+Here is a look at the NexusGuard Enterprise Dashboard in action:
+
+
+The main dashboard identifying vulnerabilities and generating AI-powered code patches in real-time.
+
+
+The compliance auditor flagging a text document for violating internal corporate governance rules.
 
 
 
@@ -120,6 +149,17 @@ project_proposal.txt: This is a sample text document used to test the Ethics/Pol
 <img width="1893" height="950" alt="image" src="https://github.com/user-attachments/assets/43229cb3-45bb-4f61-a81a-0fcf0a0aa89a" />
 
 <img width="1895" height="947" alt="image" src="https://github.com/user-attachments/assets/7df8a98d-2134-44c7-9bbe-01942a6c39fd" />
+
+<img width="1845" height="951" alt="image" src="https://github.com/user-attachments/assets/25cc3ddd-6f6b-48e5-a0a2-2afe11d9c3f6" />
+
+<img width="1882" height="927" alt="image" src="https://github.com/user-attachments/assets/5a0dcee2-8f0e-41c7-9754-308fbb7a75d3" />
+
+<img width="1885" height="877" alt="image" src="https://github.com/user-attachments/assets/88c60d95-9492-43f3-bdff-e137895577b2" />
+
+<img width="1890" height="845" alt="image" src="https://github.com/user-attachments/assets/99106857-4f28-492e-ba75-5e135ededb08" />
+
+
+
 
 
 
